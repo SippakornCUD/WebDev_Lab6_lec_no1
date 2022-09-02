@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input{
+            width: 10%;
+        }
+        input#button{
+            width: 8%;
+        }
+    </style>
+    <script>
+        function plusnumber(){
+            let fir = document.getElementById("first");
+            let firvl = parseInt(fir.value);
+            // console.log(firvl);
+            let sec = document.getElementById("second");
+            let secvl = parseInt(sec.value);
+            // console.log(secvl);
+            let sum = document.getElementById("sum");
+            sum.value = (firvl + secvl);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="first" pattern="[\d]"> + 
+        <input type="text" id="second" pattern="[\d]"> = 
+        <input type="text" id="sum">
+        <input id="button" type="button" value="Go Go" onclick="plusnumber()">
+    </form>
+</body>
+</html>
